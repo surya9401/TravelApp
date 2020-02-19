@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MyTravelAdvisor</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+
+<body>
+
+<div class="jumbotron text-center">
+    <h1>MyTravelAdvisor </h1>
+    #if($name != "anonymous")
+      <h5>Hello, $name! </h5>
+    #end
+</div>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-10">
+            <p><a href=\"/login?logout\">(logout)</a></p>
+            <p> <a href="/search">Back To Home Page</a> </p> <br>
+            <h3>Edit/Delete Review for Hotel:$hotelName</h3>
+
+            <form action = \"/update\" method = \"POST\"" + ">
+                Title:<br>
+                <textarea id="titleChange" name="titleChange" >$titleValue</textarea>
+                <br>
+                Review:<br>
+                <textarea id="review" name="review" >$reviewValue</textarea>
+                <br>
+                Rating (out of 5):<br>
+                <textarea id="rating" name="rating" >$rating</textarea>
+                <br>
+                <input type="hidden" name="hotelId" value=$hotelId />
+                <input type="submit" value="Update">
+            </form>
+
+            <p>Click on Update after modifying the fields</p>
+
+            <h3> <a href="/search?deleteReview=true&hotelId=$hotelId&titleReview=$titleValue">Delete Review </a> </h3>
+
+
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MyTravelAdvisor</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+
+<body>
+
+<div class="jumbotron text-center">
+    <h1>MyTravelAdvisor </h1>
+    #if($name != "anonymous")
+      <h5>Hello, $name! </h5>
+    #end
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-10">
+            <p><a href=\"/login?logout\">(logout)</a></p>
+            <p> <a href="/search">Back To Home Page</a> </p> <br>
+            <h3> Thank you ! Your Review has been recorded ! </h3>
+        </div>
+    </div>
+</div>
+</body>
+</html>
