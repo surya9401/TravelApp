@@ -5,7 +5,7 @@ Implementation of a Hosted Web Application in implemented Using Java framework. 
 -> Database (MySQL)<br>
 -> Front End (HTML, Javascript, CSS, Bootstrap, Velocity Engine) <br>
 -> Back End (Object Oriented Design in java)<br>
--> Multithreaded Architectureprocesses <br>
+-> Multithreaded Architecture <br>
 -> Database consisting of 100+ Hotels <br>
 
 Steps to run: <br>
