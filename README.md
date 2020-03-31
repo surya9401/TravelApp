@@ -1,7 +1,7 @@
 <h3> 12th December 2019 <h3>
 <h2> Travel Advisor Web Application </h2>
 
-Implementation of a Hosted Web Application in implemented Using Java framework. <br><br>
+Implementation of a Web Application in implemented using Java framework. <br><br>
 -> Database (MySQL)<br>
 -> Front End (HTML, Javascript, CSS, Bootstrap, Velocity Engine) <br>
 -> Back End (Object Oriented Design in java)<br>
